@@ -13296,7 +13296,9 @@ Make sure to keep track of the various features and conditions you tried before 
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer</strong>: <em>80.25%</em></p>
+<p><strong>Answer</strong>: * Final predication: 80.25%</p>
+<p>To get the final prediction model, I used the visualizer to take a look at unexplored data sets. I tried looking at the initial prediction and try to add Pclass and maybe Parch to see if they worked. i.e. A or B or C, trying to make C something. But those all resulted in worse predictions. So, I opted for if (C) else (A or B), or C or (!C and A) or (!C and B). Parch certainly had some relevant data, but the more data significant variable to survivability was the Class the passenger was on. But, looking at that datum, it also was important to look at it with relation to other data. Where I found that passengers who were in 3rd class, but younger than 10 did seem to survive better.</p>
+<p>*</p>
 
 </div>
 </div>
@@ -13316,7 +13318,7 @@ Make sure to keep track of the various features and conditions you tried before 
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer</strong>: *In a previous job, one of our data scientists used data to predict whether or not a given photographer and past history and previous photos could meet the standards of our photo assignments. So, that is potentially one use.</p>
+<p><strong>Answer</strong>: *In a previous job, one of our data scientists used data to predict whether or not a given photographer and past history and previous photos could meet the standards of our photo assignments. When we analyzed this data, we took into account the score given on past assignments, the photo assignment type (food, auto, portrait, etc). We also took into consideration their portfolio scores, their camera equipment and lenses, their date of submission (early, on time, late). And in the use case, the best photographers were ones who submitted usable photos on time. So, that is potentially one use.</p>
 <p>With regards to this scenario, and the movie Titanic, I knew there was big emphasis on saving the women and children first above all others. I also knew that everyone in the 3rd class was in essence going to die. So my prediction tried to take into account first the class of the passenger before their sex and sex/age combination.
 *</p>
 
